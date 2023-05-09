@@ -1,32 +1,222 @@
-# Prerequisites
-*.d
+#include <cmath>
+#include <iostream>
+#include <stdio.h>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+  /*
+  // 1. Get the user to enter a value
+  printf ("Enter an integer: ");
+  int value = 0;
+  std::cin >> value;
+  // 2. If we divide by 2 and there is no remainder, it must be even
+  if (value % 2 == 0) {
+    std::cout << value << " is an even number!\n"; }
+    else if (value % 2 != 0) {
+    std::cout << value << " Is an odd number! \n";
+  }
+*/
+  // for pow
 
-# Precompiled Headers
-*.gch
-*.pch
+  /*
+    std::cout << "\n\t\tBMI Calculator v1.0\n\n";
+    // 1. It is possible to intialise multiple variables on a single line
+    double height = 0.0, mass = 0.0;
+    // 2. Get the user to enter the required details
+    std::cout << "Enter a height (in m): ";
+    std::cin  >> height;
+    // 3. We'll hardcode the mass (in kg) for starters
+  // mass = 80.0;
+    std::cout << "Enter your mass: (in Kg) ";
+    //float mass;
+    std::cin >> mass;
+    // 4. BMI is mass divided by height squared
+    double bmi = mass/pow(height,2.0);
+    std::cout << "\nThe calculated BMI is: " << bmi << " kg/m^2\n";
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    std::cout << "\nThis is categorised as: ";
 
-# Fortran module files
-*.mod
-*.smod
+    // from https://en.wikipedia.org/wiki/Body_mass_index
+    if (bmi < 18.5) {
+      std::cout << " underweight\n";
+    }
+    else if (bmi > 25.0) {
+      std::cout << " overweight\n";
+      }
+    else if (18.5 < bmi < 25 ){
+      std::cout << "Healthy ";
+      }
+*/
+  
+  
+  
+    printf ("This is an ELEC1620 module grade and classification \n calculator \n");
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    int unit1 = 0;
+    int unit2 = 0;
+    int unit3 = 0;
+    int unit4 = 0;
 
-# Executables
-*.exe
-*.out
-*.app
+    printf ("enter grade precentile for Unit 1 test ");
+    std::cin >> unit1;
+    std::cout << "Your unit 1 test grade precentile is: " << unit1 << " % \n";
+
+    printf ("enter grade precentile for Unit 2 test ");
+    std::cin >> unit2;
+    std::cout << "Your unit 2 test grade precentile is: " << unit2 << " % \n";
+
+    printf ("enter grade precentile for Unit 3 test ");
+    std::cin >> unit3;
+    std::cout << "Your unit 3 test grade precentile is: " << unit3 << " % \n";
+
+    printf ("enter grade precentile for Unit 4 test ");
+    std::cin >> unit4;
+    std::cout << "Your unit 4 test grade precentile is: " << unit4 << " % \n";
+   int Total  = ((unit1*0.15) + (unit2*0.25) + (unit3*0.25) +
+   (unit4*0.35));
+      std::cout << "Your final year grade is :" << Total << " ! \n";
+    if( Total > 69){
+      printf(" Which is a first class !");
+        }
+    else if( Total > 59){
+      printf(" Which is a second class !");
+        }
+    else if( Total > 49){
+      printf(" Which is a third class !");
+        }
+
+    else if( Total > 40){
+      printf(" Which is a pass class !");
+        }
+
+    else if( Total < 40){
+        printf(" Which is a fail :/  ");
+      }
+
+      /*
+  // Number factorial //
+  
+  std::cout << " Enter a number and we'll output its factorial :) ";
+  int i;
+  std::cin >> i;
+  if (i< 13){
+    int x = 0;
+    int sum = 1;
+    while (x<i){
+      x = x + 1;
+      sum = x * sum;
+      std::cout << "\n" << x ;
+      }
+     std::cout<< "\n" << "Its factorial is: \n" << sum;
+    }
+  else if (i >= 13){
+    printf("\nNumber inputed should be less than \n '13' for this to work !
+  \n");
+    }
+    */
+
+  
+  /*
+  std::cout << " Enter a numnber and we'll output its factorial :) ";
+  int i;
+  std::cin >> i;
+  int x = 0;
+  unsigned long long sum = 1;
+  while (x < i) {
+    x = x + 1;
+    sum = x * sum;
+  }
+  std::cout << "\n"
+            << "Its factorial is: \n"
+            << sum;
+
+  
+  //number factorial with a very high limit trial \\ 
+
+
+  // code to draw a square with a dedicated number of rows and columns//
+
+  
+  std::cout << "Drawing Shapes!\n\n";
+  int r;
+  printf("Enter the number of rows: ");
+  std::cin >> r;
+  int c;
+  printf("Enter the number of columns: ");
+  std::cin >> c;
+  // 1. Here we have an 'outer' loop (rows)
+  for (int i = 0 ; i < r; i=i+1) {
+    // 2. We then have an 'inner' loop (columns)
+    for (int j = 0 ; j < c; j=j+1) {
+      // 3. Print a character j times
+      std::cout << "|x|";
+    }
+    std::cout << "\n";  // 4. At the end of the row, start a new line
+  }
+*/
+
+  /*
+    int n;
+      std::cout << "Enter an integer: ";
+      std::cin >> n;
+
+      // Initialize the sum of odd numbers to zero
+      int sum_of_odd_numbers = 0;
+
+      // Create a for loop that starts at 0 and increases by 1 until it gets to
+    the specified integer value for (int i = 0; i <= n; i=i+1) { std::cout <<
+    "\n"<<i;
+          // Check whether the value is odd
+          if (i % 2 != 0) {
+              // Add the odd number to the sum of odd numbers
+              sum_of_odd_numbers += i;
+          }
+      }
+
+      // Print the sum of odd numbers
+      std::cout << "\nThe sum of odd numbers is: " << sum_of_odd_numbers ;
+
+  */ 
+        //unfinished 
+        /*
+int user_input;
+std::cout << "Try guessing the number between 1 and 400:  ";
+  std::cin >> user_input; 
+   int random = rand()%400+1;
+  for (user_input; user_input != random;){
+  if (user_input == random){
+    std::cout << "Bang on!!";}
+   
+  else if (user_input < random ){
+    std::cout << "Go big or go home!!";}
+
+    else if (user_input > random){
+      std::cout << " You went too big! ";
+      }
+    }
+    
+      
+
+  */
+
+  
+  //std::cout << random; 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
